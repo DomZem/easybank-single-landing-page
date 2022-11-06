@@ -20,4 +20,12 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    &__button {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: inline-block;
+        }
+    }
 }
