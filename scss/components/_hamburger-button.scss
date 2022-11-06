@@ -1,0 +1,38 @@
+.hamburger-button {
+    border: 0;
+
+    width: 34px;
+
+    padding: 0.4em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    background-color: transparent;
+
+    &__bar {
+        width: 100%;
+        height: 3px;
+
+        border-radius: 1em;
+
+        background-color: $dark-blue;
+
+        transition: .3s ease-in-out;
+    }
+
+    &--is-active {
+        .hamburger-button__bar--1 {
+            transform: translateY(235%) rotate(45deg);
+        }
+
+        .hamburger-button__bar--2 {
+            background-color: transparent;
+        }
+
+        .hamburger-button__bar--3 {
+            transform: translateY(-235%) rotate(-45deg);
+        }
+    }
+}
