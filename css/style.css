@@ -39,6 +39,30 @@ h1, h2, h3, h4, h5, h6 {
   color: #2d314d;
 }
 
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 2em;
+  padding: 0.75em 2em;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.button--green-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  .button--green-gradient {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .button--green-gradient:hover {
+    opacity: 0.65;
+  }
+}
+
 .hamburger-button {
   border: 0;
   width: 34px;
