@@ -1,0 +1,15 @@
+:root { font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li { list-style-type: none; }
+
+a { text-decoration: none; color: $grayish-blue; }
+
+img { max-width: 100%; }
