@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+
+    border: none;
+
+    border-radius: 2em;
+    padding: .75em 2em;
+
+    font-family: $font-public-sans;
+    font-size: 1.6rem;
+
+    &--green-gradient {
+        background: linear-gradient(to right, $lime-green, $bright-cyan);
+        color: $white;
+
+        @media (min-width: 992px) {
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.65;
+            }
+        }
+    }
+}

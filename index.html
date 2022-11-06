@@ -9,8 +9,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Main style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="js/hamburgerButton.js" defer></script>
+    <script src="js/siteNavToggle.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img class="header__logo" src="img/logo.svg" alt="easybank text">
 
+            <nav class="site-nav">
+                <button class="site-nav__toggle hamburger-button">
+                    <div class="hamburger-button__bar hamburger-button__bar--1"></div>
+                    <div class="hamburger-button__bar hamburger-button__bar--2"></div>
+                    <div class="hamburger-button__bar hamburger-button__bar--3"></div>
+                </button>
+
+                <ul class="menu menu--mobile menu--is-disable">
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Home</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">About</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Contact</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Blog</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Careers</a>
+                    </li>
+                </ul>
+
+                <ul class="menu menu--desktop">
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Home</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">About</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Contact</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Blog</a>
+                    </li>
+
+                    <li class="menu__link">
+                        <a href="/" class="menu__item">Careers</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__button button button--green-gradient">Request Invite</button>
+        </div>
+    </header>
+
+    <div class="backdrop"></div>
 </body>
 </html>

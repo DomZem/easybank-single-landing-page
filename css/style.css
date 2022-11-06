@@ -37,4 +37,181 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #2d314d;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 2em;
+  padding: 0.75em 2em;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+}
+.button--green-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  .button--green-gradient {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .button--green-gradient:hover {
+    opacity: 0.65;
+  }
+}
+
+.hamburger-button {
+  border: 0;
+  width: 34px;
+  padding: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  background-color: transparent;
+}
+.hamburger-button__bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 1em;
+  background-color: #2d314d;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hamburger-button--is-active .hamburger-button__bar--1 {
+  -webkit-transform: translateY(235%) rotate(45deg);
+          transform: translateY(235%) rotate(45deg);
+}
+.hamburger-button--is-active .hamburger-button__bar--2 {
+  background-color: transparent;
+}
+.hamburger-button--is-active .hamburger-button__bar--3 {
+  -webkit-transform: translateY(-235%) rotate(-45deg);
+          transform: translateY(-235%) rotate(-45deg);
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 900;
+}
+
+.backdrop.is-active {
+  display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+.header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__button {
+  display: none;
+}
+@media (min-width: 992px) {
+  .header__button {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-nav__toggle {
+    display: none;
+  }
+}
+
+.menu--mobile {
+  position: fixed;
+  top: 8.5rem;
+  left: 2rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+.menu--mobile .menu__link {
+  font-size: 1.8rem;
+  color: #2d314d;
+}
+.menu--mobile.menu--is-disable {
+  display: none;
+}
+.menu--desktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .menu--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .menu--desktop .menu__link {
+    position: relative;
+  }
+  .menu--desktop .menu__link::before {
+    content: "";
+    position: absolute;
+    bottom: -3.2rem;
+    width: 0;
+    height: 4px;
+    background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    -webkit-transition: 0.3s width;
+    transition: 0.3s width;
+  }
+  .menu--desktop .menu__link:hover::before {
+    width: 100%;
+  }
+  .menu--desktop .menu__item {
+    -webkit-transition: 0.3s color;
+    transition: 0.3s color;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
+  .menu--desktop .menu__item {
+    color: #2d314d;
+  }
 }/*# sourceMappingURL=style.css.map */
