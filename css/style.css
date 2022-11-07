@@ -306,4 +306,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero__title {
   font-size: 4rem;
+}
+
+.about {
+  padding: 10rem 2rem;
+  background-color: #f3f4f6;
+}
+.about__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about__content {
+  margin-bottom: 10rem;
+  text-align: center;
+}
+.about__title {
+  margin-bottom: 0.5em;
+  font-size: 3.5rem;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.feature__title {
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
