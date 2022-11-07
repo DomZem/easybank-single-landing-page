@@ -346,4 +346,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 .feature__title {
   font-size: 2rem;
+}
+
+.blog {
+  padding: 10rem 2rem;
+  background-color: #fafafa;
+}
+.blog__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blog__title {
+  margin-bottom: 1em;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.blog__articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.article {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
+.article__image {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.article__content {
+  padding: 1.75rem;
+}
+.article__author {
+  font-size: 1.4rem;
+  color: #9698a6;
+}
+.article__title {
+  margin: 0.5em 0;
+  font-size: 1.8rem;
+}
+.article__description {
+  line-height: 1.3;
 }/*# sourceMappingURL=style.css.map */
