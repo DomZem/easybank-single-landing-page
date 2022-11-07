@@ -1,9 +1,10 @@
 @import 'utility/colors';
+@import 'utility/mixins';
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/button';
 @import 'components/hamburger-button';
-@import './components/backdrop';
+@import 'components/backdrop';
 @import 'components/header';
 @import 'components/site-nav';
 @import 'components/menu';

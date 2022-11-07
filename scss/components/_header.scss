@@ -13,8 +13,7 @@
     z-index: 999;
 
     &__wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
+        @include max-wrapper-width(1200px);
 
         display: flex;
         align-items: center;

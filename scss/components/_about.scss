@@ -4,8 +4,7 @@
     background-color: $light-grayish-blue;
 
     &__wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
+        @include max-wrapper-width(1200px);
     }
 
     &__content {

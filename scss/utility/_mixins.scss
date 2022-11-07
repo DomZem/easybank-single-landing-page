@@ -1,0 +1,11 @@
+@mixin max-wrapper-width ($max-width) {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
