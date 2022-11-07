@@ -1,0 +1,29 @@
+.article {
+    background-color: $white;
+    border-radius: .75rem;
+
+    &__image {
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
+    }
+
+    &__content {
+        padding: 1.75rem;
+    }
+
+    &__author {
+        font-size: 1.4rem;
+
+        color: $grayish-blue;
+    }
+
+    &__title {
+        margin: .5em 0;
+
+        font-size: 1.8rem;
+    }
+
+    &__description {
+        line-height: 1.3;
+    }
+}

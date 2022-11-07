@@ -1,0 +1,24 @@
+.blog {
+    padding: 10rem 2rem;
+
+    background-color: $very-light-gray;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 1em;
+
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    &__articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+    }
+}
+
