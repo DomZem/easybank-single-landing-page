@@ -1,0 +1,29 @@
+.about {
+    padding: 10rem 2rem;
+
+    background-color: $light-grayish-blue;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        margin-bottom: 10rem;
+
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: .5em;
+
+        font-size: 3.5rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 5rem;
+    }
+}
+

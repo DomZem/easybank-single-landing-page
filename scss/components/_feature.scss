@@ -1,0 +1,12 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+    }
+}
